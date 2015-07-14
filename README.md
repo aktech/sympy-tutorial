@@ -1,4 +1,4 @@
-# PyConSymPy
+# PyCon-SymPy
 PyCon India -  SymPy Presentation
 
 Proposal Link: [Symbolic computation with Python](https://in.pycon.org/cfp/pycon-india-2015/proposals/symbolic-computation-with-python-sympy/)
