@@ -1,20 +1,20 @@
-# PyCon-SymPy
+## PyCon-SymPy
 PyCon India -  SymPy Presentation
 
 Proposal Link: [Symbolic computation with Python](https://in.pycon.org/cfp/pycon-india-2015/proposals/symbolic-computation-with-python-sympy/)
 
 [![Join the chat at https://gitter.im/sympy/pycon-india](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sympy/pycon-india?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-# About SymPy
+## About SymPy
 SymPy is a pure Python library for symbolic mathematics. It aims to become a full-featured computer algebra system (CAS) while keeping the code as simple as possible in order to be comprehensible and easily extensible. SymPy is written entirely in Python and does not require any external librarie
 
-# SymPy Tutorial for PyCon India 2015
+## SymPy Tutorial for PyCon India 2015
 This is the tutorial that SymPy developers will be giving at PyCon India 2015 for SymPy.
 In this tutorial we will introduce attendees to SymPy, a computer aided algebra system (CAS) written in Python. We will show basics of constructing and manipulating mathematical expressions in SymPy, the most common issues and differences from other computer algebra systems, and how to deal with them. In the last part of this tutorial, we will show how to solve practical problems with SymPy. This will include showing how to interface SymPy with popular numeric libraries like NumPy.
 
 Attendees will come away with an introductory level understanding of SymPy. This knowledge should be enough for attendees to start using SymPy for solving mathematical problems and hacking SymPy's internals (though hacking core modules may require additional expertise).
 
-# Speaker Info
+## Speaker Info
 
 SymPy India developers will be conducting the workshop: 
 
