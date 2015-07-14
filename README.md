@@ -30,3 +30,4 @@ SymPy India developers will be conducting the workshop:
 
 * [Sartaj Singh](https://github.com/leosartaj), a student of IIT-BHU Varanasi, GSoC-cer at SymPy 
 
+* [Abinash Meher](https://github.com/abinashmeher999), a student of IIT-Kharagpur, GSoC-cer at SymEngine
