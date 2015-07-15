@@ -3,7 +3,7 @@ PyCon India -  SymPy Presentation
 
 * Proposal Link: [Symbolic computation with Python](https://in.pycon.org/cfp/pycon-india-2015/proposals/symbolic-computation-with-python-sympy/)
 
-* Website Link: http://aktech.github.io/sympy-pycon
+* Website Link: http://iamit.in/sympy-pycon/
 
 ## About SymPy
 SymPy is a pure Python library for symbolic mathematics. It aims to become a full-featured computer algebra system (CAS) while keeping the code as simple as possible in order to be comprehensible and easily extensible. SymPy is written entirely in Python and does not require any external library.
