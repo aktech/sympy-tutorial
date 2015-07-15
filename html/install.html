@@ -26,20 +26,20 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
     <script type="text/javascript" src="http://live.sympy.org/static/utilities.js"></script>
     <script type="text/javascript" src="http://live.sympy.org/static/external/classy.js"></script>
     <script type="text/javascript" src="http://live.sympy.org/static/live-core.js"></script>
     <script type="text/javascript" src="http://live.sympy.org/static/live-autocomplete.js"></script>
     <script type="text/javascript" src="http://live.sympy.org/static/live-sphinx.js"></script>
+    <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
     <script type="text/javascript" src="_static/sidebar.js"></script>
     <link rel="shortcut icon" href="_static/SymPy-Favicon.ico"/>
     <link rel="top" title="PyCon 2015 SymPy Tutorial  documentation" href="index.html" />
     <link rel="next" title="SymPy Tutorial" href="tutorial/index.html" />
     <link rel="prev" title="SymPy Tutorial for PyCon 2015" href="index.html" /> 
   </head>
-  <body>
-    <div class="related">
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -64,7 +64,7 @@
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="installation">
 <span id="id1"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
@@ -132,7 +132,7 @@ directory.</p>
 only enabled when certain libraries are installed.  For example, without
 Matplotlib, only simple text-based plotting is enabled.  With the IPython
 notebook or qtconsole, you can get nicer <span class="math">\(\LaTeX\)</span> printing by running
-<tt class="docutils literal"><span class="pre">init_printing()</span></tt>.  An easy way to get all these libraries in addition to
+<code class="docutils literal"><span class="pre">init_printing()</span></code>.  An easy way to get all these libraries in addition to
 SymPy is to install <a class="reference external" href="http://continuum.io/downloads">Anaconda</a>, which is
 a free Python distribution from Continuum Analytics that includes SymPy,
 Matplotlib, IPython, NumPy, and many more useful packages for scientific
@@ -177,7 +177,7 @@ an <a class="reference external" href="https://github.com/sympy/sympy/issues">is
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
             <p class="logo"><a href="index.html">
               <img class="logo" src="_static/sympylogo.png" alt="Logo"/>
@@ -201,12 +201,14 @@ an <a class="reference external" href="https://github.com/sympy/sympy/issues">is
   <h4>Next topic</h4>
   <p class="topless"><a href="tutorial/index.html"
                         title="next chapter">SymPy Tutorial</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="_sources/install.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/install.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" />
@@ -223,7 +225,7 @@ an <a class="reference external" href="https://github.com/sympy/sympy/issues">is
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -244,10 +246,10 @@ an <a class="reference external" href="https://github.com/sympy/sympy/issues">is
         <li><a href="index.html">PyCon 2015 SymPy Tutorial  documentation</a> &raquo;</li> 
       </ul>
     </div>
-    <div class="footer">
+    <div class="footer" role="contentinfo">
         &copy; Copyright 2015 SymPy Development Team.
       Last updated on Jul 15, 2015.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3b2.
     </div>
   </body>
 </html>
