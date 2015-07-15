@@ -12,7 +12,7 @@ The slides for this tutorial are `here <http://iamit.in/sympy-pycon/pycon2015.pd
 The source for this tutorial is on `GitHub <https://github.com/aktech/sympy-pycon>`_.
 
 The exercises for this tutorial are `here
-<http://asmeurer.github.io/scipy-2014-tutorial/tutorial_exercises.zip>`_, including
+<http://iamit.in/sympy-pycon/tutorial_exercises.zip>`_, including
 exercises (exercises require the IPython notebook).
 
 See also `Last Year's SciPy tutorial

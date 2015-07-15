@@ -26,12 +26,12 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
     <script type="text/javascript" src="http://live.sympy.org/static/utilities.js"></script>
     <script type="text/javascript" src="http://live.sympy.org/static/external/classy.js"></script>
     <script type="text/javascript" src="http://live.sympy.org/static/live-core.js"></script>
     <script type="text/javascript" src="http://live.sympy.org/static/live-autocomplete.js"></script>
     <script type="text/javascript" src="http://live.sympy.org/static/live-sphinx.js"></script>
-    <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
     <script type="text/javascript" src="../_static/sidebar.js"></script>
     <link rel="shortcut icon" href="../_static/SymPy-Favicon.ico"/>
     <link rel="top" title="PyCon 2015 SymPy Tutorial  documentation" href="../index.html" />
@@ -39,8 +39,8 @@
     <link rel="next" title="Simplification" href="simplification.html" />
     <link rel="prev" title="Basic Operations" href="basic_operations.html" /> 
   </head>
-  <body role="document">
-    <div class="related" role="navigation" aria-label="related navigation">
+  <body>
+    <div class="related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -66,7 +66,7 @@
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="printing">
 <span id="tutorial-printing"></span><h1>Printing<a class="headerlink" href="#printing" title="Permalink to this headline">¶</a></h1>
@@ -91,7 +91,7 @@ discussed in this tutorial.</p>
 </div>
 <div class="section" id="setting-up-pretty-printing">
 <h2>Setting up Pretty Printing<a class="headerlink" href="#setting-up-pretty-printing" title="Permalink to this headline">¶</a></h2>
-<p>If all you want is the best pretty printing, use the <code class="docutils literal"><span class="pre">init_printing()</span></code>
+<p>If all you want is the best pretty printing, use the <tt class="docutils literal"><span class="pre">init_printing()</span></tt>
 function.  This will automatically enable the best printer available in your
 environment.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">init_printing</span>
@@ -104,8 +104,8 @@ environment.</p>
 Format&#8221; in the settings.</p>
 </div>
 <p>If you plan to work in an interactive calculator-type session, the
-<code class="docutils literal"><span class="pre">init_session()</span></code> function will automatically import everything in SymPy,
-create some common Symbols, setup plotting, and run <code class="docutils literal"><span class="pre">init_printing()</span></code>.</p>
+<tt class="docutils literal"><span class="pre">init_session()</span></tt> function will automatically import everything in SymPy,
+create some common Symbols, setup plotting, and run <tt class="docutils literal"><span class="pre">init_printing()</span></tt>.</p>
 <blockquote>
 <div><div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">init_session</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">init_session</span><span class="p">()</span> 
@@ -149,9 +149,9 @@ used.</p>
 <a class="reference internal image-reference" href="../_images/consoleascii.png"><img alt="../_images/consoleascii.png" src="../_images/consoleascii.png" style="width: 700px;" /></a>
 </li>
 </ul>
-<p>To explicitly not use <span class="math">\(\LaTeX\)</span>, pass <code class="docutils literal"><span class="pre">use_latex=False</span></code> to <code class="docutils literal"><span class="pre">init_printing()</span></code>
-or <code class="docutils literal"><span class="pre">init_session()</span></code>.  To explicitly not use Unicode, pass
-<code class="docutils literal"><span class="pre">use_unicode=False</span></code>.</p>
+<p>To explicitly not use <span class="math">\(\LaTeX\)</span>, pass <tt class="docutils literal"><span class="pre">use_latex=False</span></tt> to <tt class="docutils literal"><span class="pre">init_printing()</span></tt>
+or <tt class="docutils literal"><span class="pre">init_session()</span></tt>.  To explicitly not use Unicode, pass
+<tt class="docutils literal"><span class="pre">use_unicode=False</span></tt>.</p>
 </div>
 <div class="section" id="printing-functions">
 <h2>Printing Functions<a class="headerlink" href="#printing-functions" title="Permalink to this headline">¶</a></h2>
@@ -159,10 +159,10 @@ or <code class="docutils literal"><span class="pre">init_session()</span></code>
 printers by calling the appropriate function.</p>
 <div class="section" id="str">
 <h3>str<a class="headerlink" href="#str" title="Permalink to this headline">¶</a></h3>
-<p>To get a string form of an expression, use <code class="docutils literal"><span class="pre">str(expr)</span></code>.  This is also the
-form that is produced by <code class="docutils literal"><span class="pre">print(expr)</span></code>.  String forms are designed to be
+<p>To get a string form of an expression, use <tt class="docutils literal"><span class="pre">str(expr)</span></tt>.  This is also the
+form that is produced by <tt class="docutils literal"><span class="pre">print(expr)</span></tt>.  String forms are designed to be
 easy to read, but in a form that is correct Python syntax so that it can be
-copied and pasted.  The <code class="docutils literal"><span class="pre">str()</span></code> form of an expression will usually look
+copied and pasted.  The <tt class="docutils literal"><span class="pre">str()</span></tt> form of an expression will usually look
 exactly the same as the expression as you would enter it.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s">&#39;x y z&#39;</span><span class="p">)</span>
@@ -177,7 +177,7 @@ exactly the same as the expression as you would enter it.</p>
 <h3>repr<a class="headerlink" href="#repr" title="Permalink to this headline">¶</a></h3>
 <p>The repr form of an expression is designed to show the exact form of an
 expression.  It will be discussed more in the <a class="reference internal" href="manipulation.html#tutorial-manipulation"><em>Advanced Expression Manipulation</em></a>
-section.  To get it, use <code class="docutils literal"><span class="pre">srepr()</span></code> <a class="footnote-reference" href="#srepr-fn" id="id1">[1]</a>.</p>
+section.  To get it, use <tt class="docutils literal"><span class="pre">srepr()</span></tt> <a class="footnote-reference" href="#srepr-fn" id="id1">[1]</a>.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">srepr</span><span class="p">(</span><span class="n">Integral</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">x</span><span class="p">),</span> <span class="n">x</span><span class="p">))</span>
 <span class="go">&quot;Integral(Pow(Pow(Symbol(&#39;x&#39;), Integer(-1)), Rational(1, 2)), Tuple(Symbol(&#39;x&#39;)))&quot;</span>
 </pre></div>
@@ -187,9 +187,9 @@ internally.</p>
 </div>
 <div class="section" id="ascii-pretty-printer">
 <h3>ASCII Pretty Printer<a class="headerlink" href="#ascii-pretty-printer" title="Permalink to this headline">¶</a></h3>
-<p>The ASCII pretty printer is accessed from <code class="docutils literal"><span class="pre">pprint()</span></code>.  If the terminal does
+<p>The ASCII pretty printer is accessed from <tt class="docutils literal"><span class="pre">pprint()</span></tt>.  If the terminal does
 not support Unicode, the ASCII printer is used by default.  Otherwise, you
-must pass <code class="docutils literal"><span class="pre">use_unicode=False</span></code>.</p>
+must pass <tt class="docutils literal"><span class="pre">use_unicode=False</span></tt>.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">pprint</span><span class="p">(</span><span class="n">Integral</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">x</span><span class="p">),</span> <span class="n">x</span><span class="p">),</span> <span class="n">use_unicode</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 <span class="go">  /</span>
 <span class="go"> |</span>
@@ -201,8 +201,8 @@ must pass <code class="docutils literal"><span class="pre">use_unicode=False</sp
 <span class="go">/</span>
 </pre></div>
 </div>
-<p><code class="docutils literal"><span class="pre">pprint()</span></code> prints the output to the screen.  If you want the string form,
-use <code class="docutils literal"><span class="pre">pretty()</span></code>.</p>
+<p><tt class="docutils literal"><span class="pre">pprint()</span></tt> prints the output to the screen.  If you want the string form,
+use <tt class="docutils literal"><span class="pre">pretty()</span></tt>.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">pretty</span><span class="p">(</span><span class="n">Integral</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">x</span><span class="p">),</span> <span class="n">x</span><span class="p">),</span> <span class="n">use_unicode</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 <span class="go">&#39;  /          \n |           \n |     ___   \n |    / 1    \n |   /  -  dx\n | \\/   x    \n |           \n/            &#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">pretty</span><span class="p">(</span><span class="n">Integral</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">x</span><span class="p">),</span> <span class="n">x</span><span class="p">),</span> <span class="n">use_unicode</span><span class="o">=</span><span class="bp">False</span><span class="p">))</span>
@@ -219,10 +219,10 @@ use <code class="docutils literal"><span class="pre">pretty()</span></code>.</p>
 </div>
 <div class="section" id="unicode-pretty-printer">
 <h3>Unicode Pretty Printer<a class="headerlink" href="#unicode-pretty-printer" title="Permalink to this headline">¶</a></h3>
-<p>The Unicode pretty printer is also accessed from <code class="docutils literal"><span class="pre">pprint()</span></code> and
-<code class="docutils literal"><span class="pre">pretty()</span></code>.  It the terminal supports Unicode, it is used automatically.  If
-<code class="docutils literal"><span class="pre">pprint()</span></code> is not able to detect that the terminal supports unicode, you can
-pass <code class="docutils literal"><span class="pre">use_unicode=True</span></code> to force it to use Unicode.</p>
+<p>The Unicode pretty printer is also accessed from <tt class="docutils literal"><span class="pre">pprint()</span></tt> and
+<tt class="docutils literal"><span class="pre">pretty()</span></tt>.  It the terminal supports Unicode, it is used automatically.  If
+<tt class="docutils literal"><span class="pre">pprint()</span></tt> is not able to detect that the terminal supports unicode, you can
+pass <tt class="docutils literal"><span class="pre">use_unicode=True</span></tt> to force it to use Unicode.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">pprint</span><span class="p">(</span><span class="n">Integral</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">x</span><span class="p">),</span> <span class="n">x</span><span class="p">),</span> <span class="n">use_unicode</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="go">⌠</span>
 <span class="go">⎮     ___</span>
@@ -235,18 +235,18 @@ pass <code class="docutils literal"><span class="pre">use_unicode=True</span></c
 </div>
 <div class="section" id="latex">
 <span id="id2"></span><h3><span class="math">\(\LaTeX\)</span><a class="headerlink" href="#latex" title="Permalink to this headline">¶</a></h3>
-<p>To get the <span class="math">\(\LaTeX\)</span> form of an expression, use <code class="docutils literal"><span class="pre">latex()</span></code>.</p>
+<p>To get the <span class="math">\(\LaTeX\)</span> form of an expression, use <tt class="docutils literal"><span class="pre">latex()</span></tt>.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">latex</span><span class="p">(</span><span class="n">Integral</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">x</span><span class="p">),</span> <span class="n">x</span><span class="p">)))</span>
 <span class="go">\int \sqrt{\frac{1}{x}}\, dx</span>
 </pre></div>
 </div>
-<p>The <code class="docutils literal"><span class="pre">latex()</span></code> function has many options to change the formatting of
-different things.  See <code class="xref py py-meth docutils literal"><span class="pre">its</span> <span class="pre">documentation</span></code> for more details.</p>
+<p>The <tt class="docutils literal"><span class="pre">latex()</span></tt> function has many options to change the formatting of
+different things.  See <tt class="xref py py-meth docutils literal"><span class="pre">its</span> <span class="pre">documentation</span></tt> for more details.</p>
 </div>
 <div class="section" id="mathml">
 <h3>MathML<a class="headerlink" href="#mathml" title="Permalink to this headline">¶</a></h3>
-<p>There is also a printer to MathML, called <code class="docutils literal"><span class="pre">print_mathml()</span></code>.  It must be
-imported from <code class="docutils literal"><span class="pre">sympy.printing.mathml</span></code>.</p>
+<p>There is also a printer to MathML, called <tt class="docutils literal"><span class="pre">print_mathml()</span></tt>.  It must be
+imported from <tt class="docutils literal"><span class="pre">sympy.printing.mathml</span></tt>.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy.printing.mathml</span> <span class="kn">import</span> <span class="n">print_mathml</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">print_mathml</span><span class="p">(</span><span class="n">Integral</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">x</span><span class="p">),</span> <span class="n">x</span><span class="p">))</span>
 <span class="go">&lt;apply&gt;</span>
@@ -265,12 +265,12 @@ imported from <code class="docutils literal"><span class="pre">sympy.printing.ma
 <span class="go">&lt;/apply&gt;</span>
 </pre></div>
 </div>
-<p><code class="docutils literal"><span class="pre">print_mathml()</span></code> prints the output.  If you want the string, use the
-function <code class="docutils literal"><span class="pre">mathml()</span></code>.</p>
+<p><tt class="docutils literal"><span class="pre">print_mathml()</span></tt> prints the output.  If you want the string, use the
+function <tt class="docutils literal"><span class="pre">mathml()</span></tt>.</p>
 </div>
 <div class="section" id="dot">
 <h3>Dot<a class="headerlink" href="#dot" title="Permalink to this headline">¶</a></h3>
-<p>The <code class="docutils literal"><span class="pre">dotprint()</span></code> function in <code class="docutils literal"><span class="pre">sympy.printing.dot</span></code> prints output to dot
+<p>The <tt class="docutils literal"><span class="pre">dotprint()</span></tt> function in <tt class="docutils literal"><span class="pre">sympy.printing.dot</span></tt> prints output to dot
 format, which can be rendered with Graphviz.  See the
 <a class="reference internal" href="manipulation.html#tutorial-manipulation"><em>Advanced Expression Manipulation</em></a> section for some examples of the output of this
 printer.</p>
@@ -278,11 +278,11 @@ printer.</p>
 <table class="docutils footnote" frame="void" id="srepr-fn" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>SymPy does not use the Python builtin <code class="docutils literal"><span class="pre">repr()</span></code> function for
-repr printing, because in Python <code class="docutils literal"><span class="pre">str(list)</span></code> calls <code class="docutils literal"><span class="pre">repr()</span></code> on the
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>SymPy does not use the Python builtin <tt class="docutils literal"><span class="pre">repr()</span></tt> function for
+repr printing, because in Python <tt class="docutils literal"><span class="pre">str(list)</span></tt> calls <tt class="docutils literal"><span class="pre">repr()</span></tt> on the
 elements of the list, and some SymPy functions return lists (such as
-<code class="docutils literal"><span class="pre">solve()</span></code>).  Since <code class="docutils literal"><span class="pre">srepr()</span></code> is so verbose, it is unlikely that anyone
-would want it called by default on the output of <code class="docutils literal"><span class="pre">solve()</span></code>.</td></tr>
+<tt class="docutils literal"><span class="pre">solve()</span></tt>).  Since <tt class="docutils literal"><span class="pre">srepr()</span></tt> is so verbose, it is unlikely that anyone
+would want it called by default on the output of <tt class="docutils literal"><span class="pre">solve()</span></tt>.</td></tr>
 </tbody>
 </table>
 </div>
@@ -293,7 +293,7 @@ would want it called by default on the output of <code class="docutils literal">
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
             <p class="logo"><a href="../index.html">
               <img class="logo" src="../_static/sympylogo.png" alt="Logo"/>
@@ -323,14 +323,12 @@ would want it called by default on the output of <code class="docutils literal">
   <h4>Next topic</h4>
   <p class="topless"><a href="simplification.html"
                         title="next chapter">Simplification</a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../_sources/tutorial/printing.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/tutorial/printing.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="../search.html" method="get">
       <input type="text" name="q" />
@@ -347,7 +345,7 @@ would want it called by default on the output of <code class="docutils literal">
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related" role="navigation" aria-label="related navigation">
+    <div class="related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -369,10 +367,10 @@ would want it called by default on the output of <code class="docutils literal">
           <li><a href="index.html" >SymPy Tutorial</a> &raquo;</li> 
       </ul>
     </div>
-    <div class="footer" role="contentinfo">
+    <div class="footer">
         &copy; Copyright 2015 SymPy Development Team.
       Last updated on Jul 15, 2015.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3b2.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
     </div>
   </body>
 </html>
