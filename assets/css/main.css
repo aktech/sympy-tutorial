@@ -46,8 +46,8 @@ a:hover, a:active {
 /* Homepage
 * ============================================================================ */
 .page-home .intro {
-    margin-top: 2.5em;
-    margin-top: 15.625vh;
+    margin-top: 2.25em;
+    margin-top: 12.625vh;
     font-size: 1.5em;
     font-family: 'PT Sans', 'Droid Sans', sans-serif;
 }
