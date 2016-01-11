@@ -1,4 +1,3 @@
-## SymPy-PyCon Website
+# SymPy @ PyDelhi Conference
 
-PyCon India -  SymPy Presentation
-http://iamit.in/sympy-pycon/
+Presentation for SymPy workshop at PyDelhi Conference 2016
