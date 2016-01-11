@@ -2,7 +2,7 @@
 
 Presentation for SymPy workshop at PyDelhi Conference 2016
 
-* Proposal Link: [Symbolic computation with Python](https://cfp.pydelhi.org/pydelhi-conference-2016/proposals/symbolic-computation-with-python-using-sympy/)
+* Proposal Link: [Symbolic computation with Python using SymPy](https://cfp.pydelhi.org/pydelhi-conference-2016/proposals/symbolic-computation-with-python-using-sympy/)
 
 * Website Link: http://iamit.in/sympy-tutorial/
 
