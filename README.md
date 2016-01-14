@@ -19,10 +19,12 @@ Attendees will take home an introductory level understanding of SymPy. This know
 
 ## Speaker Info
 
-SymPy India developers will be conducting the workshop: 
+SymPy India developers will be conducting the workshop:
 
 * [Amit Kumar](https://github.com/aktech), a student of DTU, GSoC-cer at SymPy 
 
 * [Shivam Vats](https://github.com/shivamvats), a student of IIT-Kharagpur, GSoC-cer at SymPy/SymEngine 
 
 * [Sartaj Singh](https://github.com/leosartaj), a student of IIT-BHU Varanasi, GSoC-cer at SymPy 
+
+* [Gaurav Dhingra](https://github.com/gxyd), a student of IIT-Roorkee, developer at SymPy
