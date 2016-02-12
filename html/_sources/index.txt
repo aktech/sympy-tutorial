@@ -1,22 +1,20 @@
 SymPy Tutorial for PyDelhiConf 2016
 =============================
 
-This is the tutorial will be presented at PyDelhiConf India 2016 by SymPy India
+This tutorial will be presented at PyDelhiConf India 2016 by SymPy India
 for `SymPy <http://sympy.org>`_.  This is just a stripped down
 version of our `docs <http://docs.sympy.org>`_. It requires SymPy 0.7.6, and
 should work in Python 2.6, 2.7, 3.2., 3.3, or 3.4.  If you are attending this
 tutorial, please install Anaconda.
 
-The slides for this tutorial are `here <http://iamit.in/sympy-pycon/pycon2016.pdf>`_.
+The slides for this tutorial are `here <http://iamit.in/sympy-pycon/sympy-intro.pdf>`_.
 
-The source for this tutorial is on `GitHub <https://github.com/aktech/sympy-pycon>`_.
+The source for this tutorial is on `GitHub <https://github.com/aktech/sympy-tutorial>`_.
 
 The exercises for this tutorial are `here
-<http://asmeurer.github.io/scipy-2014-tutorial/tutorial_exercises.zip>`_, including
+<http://iamit.in/sympy-tutorial/tutorial_exercises.zip>`_, including
 exercises (exercises require the IPython notebook).
 
-See also `Last Year's SciPy tutorial
-<http://asmeurer.github.io/scipy-2014-tutorial/html/index.html>`_.
 
 .. toctree::
    :maxdepth: 2
