@@ -40,7 +40,7 @@ a {
     color: #376fa0;
 }
 a:hover, a:active {
-    border-bottom: 1px solid;
+   // border-bottom: 1px solid;
 }
 
 /* Homepage
