@@ -124,6 +124,7 @@ a:hover, a:active {
   margin: 0;
   list-style: none;
   padding-left: 0px;
+  font-size: 1.3em
 }
 .page-home .authors li a {
   padding: 5px 10px;
